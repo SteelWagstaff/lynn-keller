@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+.env.local
+.env.*.local
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build artifacts and dependencies (if any)
+node_modules/
+dist/
+build/
+
+# WordPress specific
+wp-config.php
+wp-config-sample.php
+.htaccess
+
+# Netlify
+.netlify/

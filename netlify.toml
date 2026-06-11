@@ -1,0 +1,39 @@
+[build]
+  publish = "/"
+  command = "echo 'No build needed for static site'"
+
+[context.production]
+  environment = { NETLIFY_USE_YARN = "false" }
+
+[context.deploy-preview]
+  environment = { NETLIFY_USE_YARN = "false" }
+
+[context.branch-deploy]
+  environment = { NETLIFY_USE_YARN = "false" }
+
+# Redirect all 404s to index.html for client-side routing (optional, uncomment if needed)
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 404
+
+# Cache headers for static assets
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
