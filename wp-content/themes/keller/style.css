@@ -1,0 +1,205 @@
+/*
+ Theme Name:   Keller
+Theme URI:     http://desertsandlakes.com/ritamae/
+ Description:  Virtue Child Theme
+ Author:       Steel Wagstaff
+ Author URI:   http://steelwagstaff.com
+ Template:     virtue
+ Version:      1.0.0
+ Tags:         responsive-layout, two-columns, one-column, custom-colors, custom-header, custom-menu, featured-images, translation-ready, theme-options, photoblogging 
+ Text Domain:  virtue-child
+*/
+@import url('/wp-content/themes/virtue/style.css');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic|Crimson+Text:400|Cardo:400,400italic,700);
+
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+/* HTML elements */
+body{
+	font-family:'Open Sans',Tahoma,Arial,sans-serif;
+	font-size:14px;
+	line-height:1.5; 
+	color: #444;
+	background: url('/wp-content/uploads/sites/11/2015/08/background.png') repeat scroll 0% 0% transparent;
+}
+
+a{
+	color:#6F9940;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#456F17;
+	text-decoration:none;
+}
+
+#logo a.brand {
+	color: #4674A1;
+}
+
+.contentclass, header, footer {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+header {
+	margin-top: 25px;
+}
+
+header, footer, div.contentclass {
+	box-shadow: 0px 0px 10px #888;
+}
+
+#logo a.brand:hover {
+	color: #2d5c88;
+}
+
+nav li a {
+	text-transform: uppercase;
+}
+
+h1,h2,h3,h4,h5,h6{
+	clear:both;
+	color: #4674A1;
+	font-family:'Cardo',sans-serif;
+}
+
+.page-header {
+	border: none;
+	margin: 15px 0 5px;
+	padding: 0;
+}
+
+h1.entry-title {
+text-transform: uppercase;
+font-size: 36px;
+font-style: normal;	
+letter-spacing: 4px;
+padding: 20px 40px;
+margin: 0 -40px;
+background: #4674A1;
+color: white;
+border-top: 4px solid #999;
+border-bottom: 4px solid #999;
+}
+
+.entry-content h2 {
+	font-variant: small-caps;
+	letter-spacing: 2px;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	font-weight: 700;
+}
+
+/* Special Styling for Home Page */
+.home .page-header {
+	display: none;
+}
+
+.home #content {
+	margin-top: 20px;
+}
+
+p{margin:0 0 20px 0;}
+
+.wp-caption-text {
+	line-height: 1.5;	
+}
+
+.bibimg {
+	padding: 0;
+}
+
+.bib li {
+	text-indent:-20px;
+}
+
+.bibimg li p {
+	margin: 20px 0 0;
+}
+
+.bib li, .bibimg li{clear:left;list-style-type:none;margin-bottom:10px;}
+
+.bibimg li img.alignleft {
+margin-top: 6px;
+}
+
+footer {
+	margin-bottom: 25px;
+}
+
+.footercredits p {
+	font-size: 14px;
+	line-height: 1.5;
+	padding: 0;
+	text-align: center;
+}
+
+.home .contentclass {
+	padding-top: 0;
+}
+
+.about h1.entry-title {
+	margin-bottom: 20px;
+}
+
+#imageslider {
+	padding: 0;
+	width: 100%;
+}
+
+.sliderclass {
+	padding: 0;
+}	
+
+.contentclass .container {
+	padding: 0 40px;
+}
+
+.kad-header-left {
+	padding-left: 40px;
+}
+cite, em {font-style:italic;}
+
+strong {font-weight:700;}
+
+@media screen and (max-width: 1200px) {
+	.contentclass, header, footer {
+	max-width: 94%;
+	}
+	.contentclass .container, .kad-header-left {
+	padding: 0 2%;
+}
+	#pageheader .container, #pageheader .entry-title {
+		width: 100%;
+	}
+	.contentclass #pageheader .container {
+	padding: 0;
+	margin 15px 0 5px;
+	}
+	
+	h1.entry-title {
+		margin: 0;
+		padding: 20px 5%;
+	}
+
+}
+
+@media screen and (max-width: 750px) {
+	.contentclass, header, footer {
+	max-width: 100%;
+	}
+	header, footer {
+	margin: 0 auto;
+	}
+	header, footer, div.contentclass {
+	box-shadow: none;
+	}
+	.captiontext p {
+	font-size: 13px;
+	line-height: 1.4;
+	}
+}
