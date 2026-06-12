@@ -4,6 +4,11 @@ Thumbs.db
 .env.local
 .env.*.local
 
+# Git
+.git
+.gitignore
+.gitattributes
+
 # Editor/IDE
 .vscode/
 .idea/
@@ -21,5 +26,12 @@ wp-config.php
 wp-config-sample.php
 .htaccess
 
-# Netlify
+# Deployment
 .netlify/
+.wrangler/
+.cloudflare/
+
+# Development
+.DS_Store
+*.log
+.env
